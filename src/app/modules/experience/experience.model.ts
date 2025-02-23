@@ -5,6 +5,7 @@ const experienceSchema = new Schema<TExperience>(
   {
     user: { type: Schema.Types.ObjectId, ref: "User", required: true },
     companyName: { type: String, required: true, trim: true },
+    companyLogo: { type: String, required: true, trim: true },
     position: { type: String, required: true, trim: true },
     start_date: { type: Date, required: true },
     end_date: { type: Date, required: true, default: null },
